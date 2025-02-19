@@ -73,3 +73,35 @@ span {
     height: 100%;
     z-index: -1;
 }
+
+#yes:hover {
+    transform: scale(2);
+    transition: transform 0.5s;
+}
+
+#no:hover {
+    transform: scale(0.2);
+    transition: transform 0.5s;
+}
+
+.shake {
+    animation: shake infinite 0.5s;
+}
+
+@keyframes shake{
+    0% {
+        transform: rotate(0);
+    }
+    25% {
+        transform: rotate(90deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    75% {
+        transform: rotate(270deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
